@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'open sans';
+}
+.container {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.title{
+    color: #3d84a8;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+
+}
+.header{
+    width: 100%;
+    height: 600px;
+    background: #1488CC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(237, 61%, 43%, 0.568), hsla(202, 82%, 44%, 0.568)), url(./amsterdam-paises-bajos.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, hsla(237, 61%, 43%, 0.568), hsla(202, 82%, 44%, 0.575)), url(./amsterdam-paises-bajos.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+    position: relative;
+    
+}
+
+nav{
+    text-align: center;
+    padding-top: 30px;
+    
+    
+}
+nav a{
+    
+    color: #ffffff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 200;
+    transition: all ease 0.5s;
+   
+    
+    
+
+
+}
+nav a:hover{
+   background-color: hsla(0, 0%, 100%, 0.507);
+
+}
+
+.text-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.text-header h1{
+    font-size: 37px;
+    color: #ffffff;
+    padding-top: 200px;
+    
+}
+.text-header h2{
+    font-size: 28px;
+    font-weight: 300;
+    color: #ffffff;
+    height: 220px;
+    margin: auto;
+    text-align: center;
+    width: 490px;
+    padding-top: 60px;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.container-about{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.about-netherlands{
+    width: 48%
+}
+.about-us .text-aboutus{
+    width: 48%;
+}
+.text-aboutus h3{
+    margin-bottom: 15px;
+}
+.text-aboutus h3 span{
+    background: #1488CC;
+    color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px rgba(0,0, 0, .5);
+    margin-right: 5px;
+}
+.text-aboutus p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+.information{
+    background: #f2f2f2;
+    
+}
+.gallery-net{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.imagen-net{
+    width: 24%;
+    margin-bottom: 10px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+.imagen-net > img{
+    width: 100%; 
+    height: 150px;  
+    
+}
+.imagen-net p{
+    visibility: hidden;
+    color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.imagen-net:hover p{
+    transform:scale(1);
+    visibility: visible;
+    font-weight: 400;
+    background: rgba(247, 244, 244, 0.657);
+    
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cards .card{
+    background: #1488CC;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+
+}
+.cards .card img{
+    width: 100pz;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    border-radius: 50px;
+    display: block;
+}
+.cards .card .container-text-card{
+    width: 60%;
+    color: #ffffff;
+
+}
+.cards .card .container-text-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+.best-city{
+    background-color: #f2f2f2;
+    padding-bottom: 30px;
+}
+.best-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.best-every{
+    width: 28%;
+    text-align: center;
+}
+.best-every img{
+    width: 90%;
+}
+.best-every h3{
+    margin: 10px 0;
+}
+.best-every p{
+    font-weight: 300;
+    text-align: justify;
+}
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+.container-footer{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 30px;
+    border-bottom: 1px solid #cccccc;
+}
+
+
